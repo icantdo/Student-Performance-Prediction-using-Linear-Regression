@@ -57,7 +57,7 @@ costs = []
 
 for i in range(1000):
     costs.append(costfun(datas, performance_index, thetas))
-    thetas_new = gradientDescent(datas, performance_index, 1 , thetas)
+    thetas_new = gradientDescent(datas, performance_index, 0.1 , thetas)
     thetas = thetas_new
     
 costs = np.array(costs)
